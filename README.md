@@ -229,7 +229,7 @@ Para contribuir com o projeto, siga os passos abaixo ou consulte o arquivo [CONT
 - [Modelo de Banco de Dados](angularnewsdocs/Models/database/diagrama_bd.md)
 - [Casos de Uso](angularnewsdocs/UseCase/Casos_de_Uso_AngularNews.md)
 - [Fluxograma de Trabalho](angularnewsdocs/UseCase/fluxo_trabalho.md)
-- [Tutorial de Git e Ferramentas](angularnewsdocs/UseCase/tutorial_fluxo_trabalho.pdf)
+- [Casos de uso](angularnewsdocs/UseCase/casos-de-uso.pdf)
 
 ---
 
