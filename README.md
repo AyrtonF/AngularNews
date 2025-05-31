@@ -111,7 +111,7 @@ classDiagram
     }
     Usuario "1" -- "0..1" Token : autentica
 ```
-> Veja o arquivo completo em [`angularnewsdocs/Models/classes/diagrama_classes.md`](angularnewsdocs/Models/classes/diagrama-de-classes.md)
+> Veja o arquivo completo em [`angularnewsdocs/Models/classes/diagrama_classes.md`](angularnewsdocs/Models/classes/diagrama-de-classes.mermaid)
 
 ---
 
@@ -151,7 +151,7 @@ erDiagram
     ARTICLES }o--|| CATEGORIES : "pertence a"
     CATEGORIES ||--o{ ARTICLES : "possui"
 ```
-> Veja o arquivo completo em [`angularnewsdocs/Models/database/diagrama_bd.md`](angularnewsdocs/Models/database/database.md)
+> Veja o arquivo completo em [`angularnewsdocs/Models/database/diagrama_bd.md`](angularnewsdocs/Models/database/database.mermaid)
 
 ---
 
