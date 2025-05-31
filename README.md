@@ -1,7 +1,7 @@
 # AngularNews
 
 ![Mockup da aplicação](angularnewsdocs/Models/Mockup/mockup1.png)
-![Diagrama de Classes](angularnewsdocs/Models/classes/diagrama_classes1.png)
+![Diagrama de Classes](angularnewsdocs/Models/classes/diagrama-de-classes.mermaid)
 ![Modelo de Banco de Dados](angularnewsdocs/Models/database/diagrama_bd1.png)
 ![Fluxograma de Uso](angularnewsdocs/UseCase/fluxo_trabalho.png)
 ![Mapa Mental](angularnewsdocs/Models/mindmap/mindmap1.png)
