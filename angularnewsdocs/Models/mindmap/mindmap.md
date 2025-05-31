@@ -1,65 +1,36 @@
+```mermaid
 mindmap
   root((AngularNews))
     Frontend
-      Ionic/Angular
-        Telas
-          Login
-          Cadastro
-          Notícias
-          Notícias por Categoria
-          Favoritos
-          Perfil do Usuário
-        Componentes
-          app-articles
-          ion-infinite-scroll
-          ion-segment
+      "Login e Cadastro"
+      "Lista de Notícias"
+      "Filtrar por Categoria"
+      "Favoritar/Desfavoritar Notícias"
+      "Visualizar Favoritos"
+      "Perfil do Usuário"
     Backend
-      Node.js/Express (ou outro)
-        API de Autenticação
-        API de Notícias
-        API de Favoritos
-        Banco de Dados
-          Usuários
-          Notícias
-          Favoritos
-          Categorias
+      "Node.js/Express"
+      "MySQL"
+      "API de Autenticação"
+      "API de Notícias"
+      "API de Favoritos"
+      "Controle de Usuários"
+      "Importação de Notícias"
     Funcionalidades
-      Autenticação
-        Login
-        Registro
-        Token JWT
-      Consumo de Notícias
-        Listagem
-        Busca por Categoria
-        Paginação
-      Favoritos
-        Adicionar/Remover
-        Listar Favoritos
-      Perfil
-        Visualizar
-        Editar
-      Notificações Push
-        (Opcional)
+      "Autenticação JWT"
+      "Consumo de API de notícias externas"
+      "Gerenciamento de Favoritos"
+      "Filtragem de Categorias"
+      "Edição de Perfil"
     Documentação
-      README.md
-      Casos de Uso
-      Diagramas
-        Classes
-        Banco de Dados
-        Mindmap
-      Mockups
-      Fluxograma de Trabalho
-      Tutoriais
+      "Casos de Uso"
+      "Diagramas"
+      "Mockups"
+      "Fluxograma de Trabalho"
     Tecnologias
-      Angular
-      Ionic
-      Node.js
-      Express
-      MySQL
-      RxJS
-      TypeScript
-    Extras
-      Estrutura de Pastas
-      Contribuição (CONTRIBUTING.md)
-      Licença (LICENSE)
-      TODO.md
+      "Angular"
+      "Ionic"
+      "Node.js"
+      "Express"
+      "MySQL"
+```
