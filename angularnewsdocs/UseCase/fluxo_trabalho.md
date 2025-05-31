@@ -11,9 +11,11 @@ flowchart TD
     H --> I[9. Atualize seu fork com o repositório principal]
     I --> B
 ```
+
 ---
 
-**Resumo dos passos:**
+### Resumo dos passos:
+
 1. Faça um fork do projeto.
 2. Clone seu fork para sua máquina.
 3. Crie uma branch específica para sua contribuição.
