@@ -27,44 +27,44 @@ O **AngularNews** é um Web App desenvolvido com Angular (Ionic Framework), foca
 ```mermaid
 mindmap
   root((AngularNews))
-    App Frontend
-      Login/Cadastro
-      Lista de Notícias
-      Filtrar por Categoria
-      Favoritar notícia
-      Visualizar Favoritos
-      Perfil do Usuário
-    App Backend
-      API Node.js/Express
-      Banco de Dados (MySQL)
-      Controle de Usuários
-      Controle de Favoritos
-      Importação de Notícias
-      Autenticação JWT
+    Frontend
+      "Login e Cadastro"
+      "Lista de Notícias"
+      "Filtrar por Categoria"
+      "Favoritar/Desfavoritar Notícias"
+      "Visualizar Favoritos"
+      "Perfil do Usuário"
+    Backend
+      "Node.js/Express"
+      "MySQL"
+      "API de Autenticação"
+      "API de Notícias"
+      "API de Favoritos"
+      "Controle de Usuários"
+      "Importação de Notícias"
     Funcionalidades
-      Autenticação
-      Consumo de Notícias externas
-      Gerenciamento de Favoritos
-      Filtragem de Categorias
-      Edição de Perfil
+      "Autenticação JWT"
+      "Consumo de API de notícias externas"
+      "Gerenciamento de Favoritos"
+      "Filtragem de Categorias"
+      "Edição de Perfil"
     Documentação
-      Casos de Uso
-      Diagramas
-      Mockups
-      Fluxo de Trabalho
+      "Casos de Uso"
+      "Diagramas"
+      "Mockups"
+      "Fluxograma de Trabalho"
     Tecnologias
-      Angular
-      Ionic
-      Node.js
-      Express
-      MySQL
+      "Angular"
+      "Ionic"
+      "Node.js"
+      "Express"
+      "MySQL"
 ```
+> Veja o arquivo completo em [`angularnewsdocs/Models/mindmap/mindmap.md`](angularnewsdocs/Models/mindmap/mindmap.md)
 
 ---
 
 ### 2. Diagrama de Classes
-
-Veja também em: `angularnewsdocs/Models/classes/diagrama_classes.md`
 
 ```mermaid
 classDiagram
@@ -111,12 +111,11 @@ classDiagram
     }
     Usuario "1" -- "0..1" Token : autentica
 ```
+> Veja o arquivo completo em [`angularnewsdocs/Models/classes/diagrama_classes.md`](angularnewsdocs/Models/classes/diagrama_classes.md)
 
 ---
 
 ### 3. Diagrama ER (Modelo de Banco de Dados)
-
-Veja também em: `angularnewsdocs/Models/database/diagrama_bd.md`
 
 ```mermaid
 erDiagram
@@ -152,6 +151,7 @@ erDiagram
     ARTICLES }o--|| CATEGORIES : "pertence a"
     CATEGORIES ||--o{ ARTICLES : "possui"
 ```
+> Veja o arquivo completo em [`angularnewsdocs/Models/database/diagrama_bd.md`](angularnewsdocs/Models/database/diagrama_bd.md)
 
 ---
 
@@ -225,9 +225,9 @@ Mais detalhes e o fluxo completo estão disponíveis em [tutorial_fluxo_trabalho
 
 ## Documentação
 
+- [Mapa Mental](angularnewsdocs/Models/mindmap/mindmap.md)
 - [Diagramas de Classes](angularnewsdocs/Models/classes/diagrama_classes.md)
 - [Modelo de Banco de Dados](angularnewsdocs/Models/database/diagrama_bd.md)
-- [Mapa Mental](angularnewsdocs/Models/mindmap/mindmap.md)
 - [Casos de Uso](angularnewsdocs/UseCase/Casos_de_Uso_AngularNews.md)
 - [Fluxograma de Trabalho](angularnewsdocs/UseCase/fluxo_trabalho.md)
 - [Tutorial de Git e Ferramentas](angularnewsdocs/UseCase/tutorial_fluxo_trabalho.pdf)
