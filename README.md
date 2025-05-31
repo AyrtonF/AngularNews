@@ -111,7 +111,7 @@ classDiagram
     }
     Usuario "1" -- "0..1" Token : autentica
 ```
-> Veja o arquivo completo em [`angularnewsdocs/Models/classes/diagrama_classes.md`](angularnewsdocs/Models/classes/diagrama-de-classes.mermaid)
+> Veja o arquivo completo em [`angularnewsdocs/Models/classes/diagrama_classes.md`](angularnewsdocs/Models/classes/diagrama_classes.md)
 
 ---
 
@@ -151,7 +151,7 @@ erDiagram
     ARTICLES }o--|| CATEGORIES : "pertence a"
     CATEGORIES ||--o{ ARTICLES : "possui"
 ```
-> Veja o arquivo completo em [`angularnewsdocs/Models/database/diagrama_bd.md`](angularnewsdocs/Models/database/database.mermaid)
+> Veja o arquivo completo em [`angularnewsdocs/Models/database/diagrama_bd.md`](angularnewsdocs/Models/database/diagrama_bd.md)
 
 ---
 
@@ -201,24 +201,82 @@ AngularNews/
 
 ## Contribuindo
 
-Para contribuir com o projeto, siga os passos abaixo ou consulte o arquivo [CONTRIBUTING.md](CONTRIBUTING.md):
+Primeiro, obrigado por dedicar seu tempo para contribuir com o AngularNews!
 
-1. Faça um fork do projeto;
-2. Crie um branch para sua feature/correção:
+### Como contribuir
+
+1. **Faça um fork** do projeto no GitHub.
+2. **Clone o seu fork** para sua máquina:
+    ```bash
+    git clone https://github.com/SEU_USUARIO/AngularNews.git
+    cd AngularNews
+    ```
+3. **Crie uma branch** para sua feature ou correção:
     ```bash
     git checkout -b minha-feature
     ```
-3. Faça suas alterações e commits:
+4. **Implemente sua contribuição** (código, documentação, testes, etc.).
+5. **Faça commit** das alterações:
     ```bash
     git add .
-    git commit -m "Minha contribuição"
+    git commit -m "Descrição clara da alteração"
     ```
-4. Envie seu branch:
+6. **Envie sua branch** para seu fork:
     ```bash
     git push origin minha-feature
     ```
-5. Abra um Pull Request no GitHub.
+7. **Abra um Pull Request** para o repositório principal e aguarde a revisão.
 
+### Enviando Problemas (Issues)
+
+- Crie uma nova issue [aqui](https://github.com/SEU_USUARIO/AngularNews/issues/new/choose) detalhando ao máximo o problema ou sugestão.
+- Inclua:
+  - Sistema operacional, navegador (caso front-end), versão do Node/Angular/Ionic se relevante.
+  - Passos para reproduzir o problema.
+  - Comportamento esperado vs. comportamento real.
+  - Prints de tela, logs ou outputs do terminal são bem-vindos.
+- Antes, verifique se já existe uma issue semelhante aberta ou fechada.
+
+### Enviando Pull Requests
+
+- Certifique-se de que seu código está atualizado com a branch principal (`main`).
+- Descreva claramente a proposta de alteração no PR.
+- Sempre que possível, relacione a issue resolvida (ex: closes #12).
+- Esteja aberto para feedbacks e ajustes solicitados durante a revisão.
+
+### Fluxo de trabalho
+
+Para conhecer o fluxo de trabalho detalhado de colaboração, veja o fluxograma disponível em  
+[`angularnewsdocs/UseCase/fluxo_trabalho.md`](angularnewsdocs/UseCase/fluxo_trabalho.md).
+
+### Comandos úteis do Git
+
+```bash
+# Clonar o repositório
+git clone https://github.com/SEU_USUARIO/AngularNews.git
+
+# Criar uma nova branch
+git checkout -b minha-feature
+
+# Verificar status das alterações
+git status
+
+# Adicionar arquivos alterados
+git add .
+
+# Commitar alterações
+git commit -m "Descrição clara da alteração"
+
+# Enviar branch para o fork
+git push origin minha-feature
+
+# Atualizar sua branch local com a main do repositório principal
+git fetch upstream
+git checkout main
+git merge upstream/main
+```
+
+Mais detalhes estão disponíveis no arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
