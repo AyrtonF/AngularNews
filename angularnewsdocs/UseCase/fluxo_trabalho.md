@@ -1,11 +1,11 @@
 ```mermaid
 flowchart TD
-    A[1. Fork do repositório principal] --> B[2. Clone seu fork para sua máquina]
-    B --> C[3. Crie uma branch para sua feature/correção]
-    C --> D[4. Implemente a feature ou correção localmente]
+    A[1. Fork do repositório principal] --> B[2. Clone o fork na sua máquina]
+    B --> C[3. Crie uma branch para sua feature ou correção]
+    C --> D[4. Implemente e teste localmente]
     D --> E[5. Commit e push para o seu fork]
-    E --> F[6. Abra um Pull Request (PR) para o repositório principal]
-    F --> G{7. Revisão do PR}
+    E --> F[6. Abra um Pull Request para o repositório principal]
+    F --> G{7. Revisão do Pull Request}
     G -- "Solicita ajustes" --> C
     G -- "Aprovado" --> H[8. Merge realizado]
     H --> I[9. Atualize seu fork com o repositório principal]
@@ -14,7 +14,7 @@ flowchart TD
 
 ---
 
-### Resumo dos passos:
+### Resumo dos passos
 
 1. Faça um fork do projeto.
 2. Clone seu fork para sua máquina.
