@@ -111,7 +111,7 @@ classDiagram
     }
     Usuario "1" -- "0..1" Token : autentica
 ```
-> Veja o arquivo completo em [`angularnewsdocs/Models/classes/diagrama_classes.md`](angularnewsdocs/Models/classes/diagrama_classes.md)
+> Veja o arquivo completo em [`angularnewsdocs/Models/classes/diagrama_classes.md`](angularnewsdocs/Models/classes/diagrama-de-classes.mermaid)
 
 ---
 
@@ -151,7 +151,7 @@ erDiagram
     ARTICLES }o--|| CATEGORIES : "pertence a"
     CATEGORIES ||--o{ ARTICLES : "possui"
 ```
-> Veja o arquivo completo em [`angularnewsdocs/Models/database/diagrama_bd.md`](angularnewsdocs/Models/database/diagrama_bd.md)
+> Veja o arquivo completo em [`angularnewsdocs/Models/database/diagrama_bd.md`](angularnewsdocs/Models/database/database.mermaid)
 
 ---
 
@@ -283,8 +283,8 @@ Mais detalhes estão disponíveis no arquivo [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Documentação
 
 - [Mapa Mental](angularnewsdocs/Models/mindmap/mindmap.md)
-- [Diagramas de Classes](angularnewsdocs/Models/classes/diagrama_classes.md)
-- [Modelo de Banco de Dados](angularnewsdocs/Models/database/diagrama_bd.md)
+- [Diagramas de Classes](angularnewsdocs/Models/classes/diagrama-de-classes.mermaid)
+- [Modelo de Banco de Dados](angularnewsdocs/Models/database/database.mermaid)
 - [Casos de Uso](angularnewsdocs/UseCase/Casos_de_Uso_AngularNews.md)
 - [Fluxograma de Trabalho](angularnewsdocs/UseCase/fluxo_trabalho.md)
 - [Casos de uso](angularnewsdocs/UseCase/casos-de-uso.pdf)
