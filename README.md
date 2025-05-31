@@ -219,7 +219,6 @@ Para contribuir com o projeto, siga os passos abaixo ou consulte o arquivo [CONT
     ```
 5. Abra um Pull Request no GitHub.
 
-Mais detalhes e o fluxo completo estão disponíveis em [tutorial_fluxo_trabalho.pdf](angularnewsdocs/UseCase/tutorial_fluxo_trabalho.pdf).
 
 ---
 
