@@ -1,7 +1,7 @@
 import express, { Application } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import secureRoutes from './routes/routes';
+import router from './routes/routes';
 
 dotenv.config();
 
@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 // Rotas protegidas
-app.use('/api', routes);
+app.use('/api', router);
 
 // Iniciar servidor
 app.listen(port, () => {
