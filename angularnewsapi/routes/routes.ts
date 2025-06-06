@@ -77,6 +77,7 @@ const handleLogin = async (req: Request, res: Response): Promise<void> => {
       return;
     }
 
+    // Login via API REST do Firebase
     const response = await axios.post(
       `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${firebaseApiKey}`,
       {
@@ -86,16 +87,26 @@ const handleLogin = async (req: Request, res: Response): Promise<void> => {
       }
     );
 
+    const { idToken, localId } = response.data;
+
+    // Buscar os dados do usuário com o UID
+    const userRecord = await admin.auth().getUser(localId);
+
     res.status(200).json({
       message: 'Login bem-sucedido',
-      token: response.data.idToken,
-      uid: response.data.localId,
+      token: idToken,
+      user: {
+        name: userRecord.displayName || 'Usuário',
+        email: userRecord.email || email,
+      }
     });
+
   } catch (error: any) {
     console.error('Erro no login:', error.response?.data || error.message);
     res.status(401).json({ message: 'Falha ao autenticar usuário', error: error.response?.data });
   }
 };
+
 
 // Rota protegida
 const handleProfile = (req: AuthenticatedRequest, res: Response): void => {

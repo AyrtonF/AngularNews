@@ -39,9 +39,21 @@ export class NewsService {
   }
 
   // ✅ Login de usuário
-  login(userData: { email: string; password: string }): Observable<any> {
-    return this.http.post(`${urlBack}/login`, userData);
-  }
+ login(userData: { email: string; password: string }): Observable<any> {
+  return this.http.post(`${urlBack}/login`, userData).pipe(
+    map((response: any) => {
+       localStorage.setItem('token', response.token);
+      const user = {
+        name: response.user?.name || 'Usuário',
+        email: response.user?.email || userData.email,
+      };
+
+      localStorage.setItem('user', JSON.stringify(user));
+      return response;
+    })
+  );
+}
+
 
   // ✅ Adicionar artigo aos favoritos
   addFavorite(article: Article): void {
